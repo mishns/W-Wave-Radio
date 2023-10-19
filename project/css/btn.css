@@ -26,12 +26,12 @@
 
 .btn:focus {
   background-color: var(--color-accent_light);
-  outline: none;
+  outline: 2px solid var(--color-accent_dark);
 }
 
 .btn:hover {
   background-color: var(--color-accent_light);
-  outline: 2px solid #4F28A5;
+  outline: none;
 }
 
 .btn:active {

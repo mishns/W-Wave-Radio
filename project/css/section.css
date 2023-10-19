@@ -2,7 +2,7 @@
   padding: 94px 0;
 }
 
-.section-header {
+.section__header {
   color: var(--color-main);
   font-size: 48px;
   font-weight: 400;

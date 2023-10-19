@@ -5,32 +5,25 @@
 }
 
 .search-btn:focus {
-  outline: 2px solid var(--color-accent_light);
-  outline-offset: 2px;
+  outline: none;
 }
 
-.search-btn svg rect {
-  -webkit-transition: fill .3s ease;
-  -o-transition: fill .3s ease;
-  transition: fill .3s ease;
+.search-btn svg {
+  stroke: var(--color-accent);
+  -webkit-transition: stroke .3s ease-in-out;
+  -o-transition: stroke .3s ease-in-out;
+  transition: stroke .3s ease-in-out;
 }
 
-.search-btn svg path {
-  -webkit-transition: stroke .3s ease;
-  -o-transition: stroke .3s ease;
-  transition: stroke .3s ease;
-}
-
-.search-btn:hover svg rect {
-  fill: var(--color-accent_light);
-}
-
-.search-btn:hover svg path {
+.search-btn:focus svg {
   stroke: var(--color-accent_light);
 }
 
-.search-btn:active {
-  fill: var(--color-accent_dark);
+.search-btn:hover svg {
+  stroke: var(--color-accent_light);
+}
+
+.search-btn:active svg {
   stroke: var(--color-accent_dark);
   outline: none;
 }
