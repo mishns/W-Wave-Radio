@@ -1,0 +1,10 @@
+.section {
+  padding: 94px 0;
+}
+
+.section-header {
+  color: var(--color-main);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 48px;
+}

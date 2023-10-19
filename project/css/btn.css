@@ -1,0 +1,40 @@
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  width: 160px;
+  min-height: 40px;
+  padding: 17px 43px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-secondary);
+  border-radius: 77px;
+  background-color: var(--color-accent);
+  -webkit-transition: background-color .3s ease, border-color .3s ease;
+  -o-transition: background-color .3s ease, border-color .3s ease;
+  transition: background-color .3s ease, border-color .3s ease;
+}
+
+.btn_transparent {
+  background-color: transparent;
+}
+
+.btn:focus {
+  background-color: var(--color-accent_light);
+  outline: none;
+}
+
+.btn:hover {
+  background-color: var(--color-accent_light);
+  outline: 2px solid #4F28A5;
+}
+
+.btn:active {
+  background-color: var(--color-accent_dark);
+  outline: none;
+}

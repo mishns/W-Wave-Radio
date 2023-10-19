@@ -1,0 +1,36 @@
+.search-btn {
+  width: 24px;
+  height: 24px;
+  font-size: 0;
+}
+
+.search-btn:focus {
+  outline: 2px solid var(--color-accent_light);
+  outline-offset: 2px;
+}
+
+.search-btn svg rect {
+  -webkit-transition: fill .3s ease;
+  -o-transition: fill .3s ease;
+  transition: fill .3s ease;
+}
+
+.search-btn svg path {
+  -webkit-transition: stroke .3s ease;
+  -o-transition: stroke .3s ease;
+  transition: stroke .3s ease;
+}
+
+.search-btn:hover svg rect {
+  fill: var(--color-accent_light);
+}
+
+.search-btn:hover svg path {
+  stroke: var(--color-accent_light);
+}
+
+.search-btn:active {
+  fill: var(--color-accent_dark);
+  stroke: var(--color-accent_dark);
+  outline: none;
+}
