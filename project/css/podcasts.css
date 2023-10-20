@@ -1,0 +1,60 @@
+.podcasts {
+  background-color: var(--color-grey_lighten);
+}
+
+.podcasts__header {
+  margin-bottom: 31px;
+}
+
+.podcasts__list {
+  display: flex;
+  flex-wrap: wrap;
+  --offsets: 1;
+  gap: var(--gap);
+}
+
+.podcasts__card {
+  position: relative;
+  display: flex;
+  width: calc((100% - (var(--offsets) * var(--gap))) / (var(--offsets) + 1));
+  background-color: var(--color-secondary);
+}
+
+.podcasts__card-picture {
+  width: 112px;
+}
+
+.podcasts__card-picture img {
+  display: block;
+}
+
+.podcasts__card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 39px 30px;
+}
+
+.podcasts__time {
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.podcasts__card-header {
+  font-size: 20px;
+}
+
+.podcasts__author {
+  color: var(--color-grey_darken);
+}
+
+.podcasts__day {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 51px;
+  height: 16px;
+  padding-top: 3px;
+  font-size: 10px;
+  text-align: center;
+  background-color: var(--color-grey_lighten);
+}

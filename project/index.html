@@ -11,7 +11,7 @@
 <body>
   <header class="header">
     <div class="header__container container">
-      <img class="header__logo logo" src="/img/w-wave-logo.svg" alt="Логотип W-Wave Radio">
+      <a href="#" class="header__site-link"><img class="header__logo logo" src="/img/w-wave-logo.svg" alt="Логотип W-Wave Radio"></a>
       <nav class="header__nav nav">
         <ul class="header__nav-list nav__list list-reset" aria-label="Список навигации по сайту">
           <li class="header__nav-item"><a href="#podcasts" class="header__nav-link" aria-label="Подкасты">Подкасты</a></li>
@@ -35,11 +35,108 @@
   <section class="hero section">
     <div class="hero__container container">
       <div class="hero__content">
-        <h1 class="hero__header">Радио <span class="hero__name">W-Wave</span></h1>
+        <h1 class="hero__header">Радио <span class="hero__name">W-Wave</span>
+        <time class="podcasts__day"></time></h1>
         <p class="hero__descr">Привет, на&nbsp;связи W-Wave! Раньше мы&nbsp;были изданием, а&nbsp;теперь пробуем себя в&nbsp;разоворном жанре. Говорим о&nbsp;музыке, политике, истории, науке&nbsp;и&nbsp;культуре. Здесь, помимо прямого эфира&nbsp;&mdash; архив передач и&nbsp;многое другое:)</p>
         <button class="hero__btn btn btn-reset">Слушать эфир</button>
       </div>
       <div class="hero__decor"></div>
+    </div>
+  </section>
+
+  <section class="podcasts section" id="podcasts">
+    <div class="podcasts__container container">
+      <h2 class="podcasts__header section__header">Подкасты</h2>
+      <ul class="podcasts__list list-reset">
+        <li class="podcasts__card">
+          <picture class="podcasts__card-picture">
+            <img src="img/podcasts-1-w112.jpg" alt="">
+          </picture>
+          <div class="podcasts__card-content">
+            <time class="podcasts__time">15:43</time>
+            <h3 class="podcasts__card-header">Европа. XIX век</h3>
+            <span class="podcasts__author">Дмитрий Гутенберг</span>
+          </div>
+          <time class="podcasts__day">14 июня</time>
+        </li>
+        <li class="podcasts__card">
+          <picture class="podcasts__card-picture">
+            <img src="img/podcasts-2-w112.jpg" alt="">
+          </picture>
+          <div class="podcasts__card-content">
+            <time class="podcasts__time">5:32</time>
+            <h3 class="podcasts__card-header">О музыке</h3>
+            <span class="podcasts__author">Дмитрий Гутенберг</span>
+          </div>
+          <time class="podcasts__day">11 июня</time>
+        </li>
+        <li class="podcasts__card">
+          <picture class="podcasts__card-picture">
+            <img src="img/podcasts-3-w112.jpg" alt="">
+          </picture>
+          <div class="podcasts__card-content">
+            <time class="podcasts__time">8:54</time>
+            <h3 class="podcasts__card-header">Люди сегодня</h3>
+            <span class="podcasts__author">Анна Васильева</span>
+          </div>
+          <time class="podcasts__day">8 июня</time>
+        </li>
+        <li class="podcasts__card">
+          <picture class="podcasts__card-picture">
+            <img src="img/podcasts-4-w112.jpg" alt="">
+          </picture>
+          <div class="podcasts__card-content">
+            <time class="podcasts__time">9:04</time>
+            <h3 class="podcasts__card-header">Хэллоу, Африка!</h3>
+            <span class="podcasts__author">Пётр Дмитриевский</span>
+          </div>
+          <time class="podcasts__day">5 июня</time>
+        </li>
+        <li class="podcasts__card">
+          <picture class="podcasts__card-picture">
+            <img src="img/podcasts-5-w112.jpg" alt="">
+          </picture>
+          <div class="podcasts__card-content">
+            <time class="podcasts__time">7:03</time>
+            <h3 class="podcasts__card-header">Обо всём</h3>
+            <span class="podcasts__author">Пётр Дмитриевский</span>
+          </div>
+          <time class="podcasts__day">2 июня</time>
+        </li>
+        <li class="podcasts__card">
+          <picture class="podcasts__card-picture">
+            <img src="img/podcasts-6-w112.jpg" alt="">
+          </picture>
+          <div class="podcasts__card-content">
+            <time class="podcasts__time">9:15</time>
+            <h3 class="podcasts__card-header">Физика цвета</h3>
+            <span class="podcasts__author">Татьяна Флеганова</span>
+          </div>
+          <time class="podcasts__day">28 мая</time>
+        </li>
+        <li class="podcasts__card">
+          <picture class="podcasts__card-picture">
+            <img src="img/podcasts-7-w112.jpg" alt="">
+          </picture>
+          <div class="podcasts__card-content">
+            <time class="podcasts__time">16:04</time>
+            <h3 class="podcasts__card-header">Источник звука</h3>
+            <span class="podcasts__author">Пётр Дмитриевский</span>
+          </div>
+          <time class="podcasts__day">22 мая</time>
+        </li>
+        <li class="podcasts__card">
+          <picture class="podcasts__card-picture">
+            <img src="img/podcasts-8-w112.jpg" alt="">
+          </picture>
+          <div class="podcasts__card-content">
+            <time class="podcasts__time">6:55</time>
+            <h3 class="podcasts__card-header">Правила этикета</h3>
+            <span class="podcasts__author">Татьяна Флеганова</span>
+          </div>
+          <time class="podcasts__day">18 мая</time>
+        </li>
+      </ul>
     </div>
   </section>
 </body>
