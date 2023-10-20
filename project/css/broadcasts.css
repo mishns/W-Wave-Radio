@@ -34,6 +34,22 @@
   flex-grow: 0;
 }
 
+.broadcasts__archive-btn:focus {
+  color: var(--color-secondary);
+  border-color: transparent;
+  outline-color: var(--color-accent);
+}
+
+.broadcasts__archive-btn:hover {
+  color: var(--color-secondary);
+  border-color: var(--color-accent_light);
+}
+
+.broadcasts__archive-btn:active {
+  color: var(--color-secondary);
+  border-color: var(--color-accent_dark);
+}
+
 .broadcasts__archive-descr {
   color: var(--color-grey_darken);
   line-height: 24px;
@@ -63,20 +79,43 @@
 }
 
 .broadcasts__card-more-link {
-  min-width: 115px;
+  max-width: 115px;
+  display: flex;
+  align-items: center;
   font-style: italic;
+  transition: color .3s ease-in-out, background-color .3s ease-in-out;
 }
 
-.broadcasts__card-more-link::after {
-  display: inline-block;
-  content: '';
-  width: 28px;
-  height: 12px;
-  background-image: url('../img/broadcasts-arrow.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-  vertical-align: middle;
+.broadcasts__card-more-link svg {
+  fill: var(--color-main);
+  transition: fill .3s ease-in-out;
+}
+
+.broadcasts__card-more-link:focus {
+  color: var(--color-secondary);
+  background-color: var(--color-accent_light);
+  outline: none;
+}
+
+.broadcasts__card-more-link:focus svg{
+  fill: var(--color-secondary);
+}
+
+.broadcasts__card-more-link:hover {
+  color: var(--color-accent);
+}
+
+.broadcasts__card-more-link:hover svg{
+  fill: var(--color-accent);
+}
+
+.broadcasts__card-more-link:active {
+  color: var(--color-accent_dark);
+  background-color: transparent;
+}
+
+.broadcasts__card-more-link:active svg{
+  fill: var(--color-accent_dark);
 }
 
 .broadcasts__card-content {
@@ -89,4 +128,3 @@
 .broadcasts__picture img {
   display: block;
 }
-
