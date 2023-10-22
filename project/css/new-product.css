@@ -81,7 +81,7 @@
   border-color: var(--color-alt-accent_light);
 }
 
-.new-product__btn-icon * {
+.new-product__btn-icon path {
   transition: fill .3s ease-in-out;
 }
 

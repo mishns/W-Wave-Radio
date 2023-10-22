@@ -489,5 +489,80 @@
       </div>
     </div>
   </section>
+
+  <section class="about section">
+    <div class="about__container container">
+      <div class="about__descr">
+        <div class="about__descr-text">
+          <h2 class="about__header section__header">О&nbsp;нас</h2>
+          <p class="about__par-1">Приём-приём! Как слышно? Мы&nbsp;уже в&nbsp;эфире? Отлично, поехали!</p>
+          <p class="about__par-2">Друзья, мы&nbsp;будем очень рады, если вы&nbsp;поможете стать нам лучше. Нам важен каждый слушатель, поэтому вы&nbsp;можете поделиться обратной связью о&nbsp;наших предеачах, темах, подборках и&nbsp;вообще обо всём! Это можно сделать либо написав нам в&nbsp;форме ниже, либо кликнув на&nbsp;наши соцсети в&nbsp;подвале сайта. Спасибо! Услышимся!:)</p>
+        </div>
+        <div class="about__descr-decor">
+          <div class="about__decor-1"></div>
+          <div class="about__decor-2"></div>
+        </div>
+      </div>
+
+      <ul class="about__list list-reset">
+        <li class="about__card">
+          <picture class="about__card-picture">
+            <img class="about__card-img" src="img/about-guest-1-w255.jpg" alt="Дмитрий Гутенберг">
+          </picture>
+          <div class="about__card-content">
+            <h3 class="about__card-name">Дмитрий Гутенберг</h3>
+            <p class="about__card-descr">Эксперт (ну, почти) по&nbsp;всем вопросам (почти)</p>
+          </div>
+        </li>
+        <li class="about__card">
+          <picture class="about__card-picture">
+            <img class="about__card-img" src="img/about-guest-2-w255.jpg" alt="Анна Васильева">
+          </picture>
+          <div class="about__card-content">
+            <h3 class="about__card-name">Анна Васильева</h3>
+            <p class="about__card-descr">Как я&nbsp;здесь оказалась? А&nbsp;главное&nbsp;&mdash; зачем?</p>
+          </div>
+        </li>
+        <li class="about__card">
+          <picture class="about__card-picture">
+            <img class="about__card-img" src="img/about-guest-3-w255.jpg" alt="Пётр Дмитриевский">
+          </picture>
+          <div class="about__card-content">
+            <h3 class="about__card-name">Пётр Дмитриевский</h3>
+            <p class="about__card-descr">Господа! Внимание! Благодарю за&nbsp;внимание!</p>
+          </div>
+        </li>
+        <li class="about__card">
+          <picture class="about__card-picture">
+            <img class="about__card-img" src="img/about-guest-4-w255.jpg" alt="Татьяна Флеганова">
+          </picture>
+          <div class="about__card-content">
+            <h3 class="about__card-name">Татьяна Флеганова</h3>
+            <p class="about__card-descr">Одна я&nbsp;в&nbsp;пальто стою красивая, а&nbsp;вокруг...</p>
+          </div>
+        </li>
+      </ul>
+
+      <form class="about__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+        <textarea class="about__message-input about__input about__input_big" type="text" name="user-message" id="user-message" placeholder="Что скажете?" cols="30" rows="10" aria-label="Введите своё сообщение" required></textarea>
+        <div class="about__personal-data-inputs">
+          <input class="about__name-input about__input about__input_small" type="text" name="user-name" id="user-name" placeholder="Имя" aria-label="Введите ваше имя" required>
+          <div class="about__input-error-wrapper">
+            <input class="about__email-input about__input about__input_small" type="email" name="user-email" id="user-email" placeholder="Email" aria-label="Введите адрес вашей электронной почты">
+            <span class="about__error-message">Ошибка</span>
+          </div>
+        </div>
+        <button class="about__submit-btn btn btn-reset" type="submit" aria-label="Отправить">Отправить</button>
+        <div class="about__legal">
+          <input class="about__agree-checkbox" type="checkbox" name="data-processing-agree" id="data-processing-agree" required>
+          <label class="about__agree-label" for="data-processing-agree">Согласен на обработку персональных данных</label>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    
+  </footer>
 </body>
 </html>
