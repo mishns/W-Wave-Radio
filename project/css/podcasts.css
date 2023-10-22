@@ -26,6 +26,7 @@
 
 .podcasts__card-picture img {
   display: block;
+  height: 100%;
 }
 
 .podcasts__card-content {
