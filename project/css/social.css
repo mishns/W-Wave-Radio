@@ -3,6 +3,7 @@
   display: -ms-flexbox;
   display: flex;
   gap: 21px;
+  font-size: 0;
 }
 
 .social__item {
@@ -10,4 +11,25 @@
   height: 24px;
   -ms-flex-negative: none;
       flex-shrink: none;
+}
+
+.social__icon {
+  fill: var(--color-grey);
+}
+
+.social__link .social__icon {
+  transition: fill .3s ease-in-out;
+}
+
+.social__link:focus .social__icon {
+  fill: var(--color-accent_light);
+  outline: none;
+}
+
+.social__link:hover .social__icon {
+  fill: var(--color-accent);
+}
+
+.social__link:active .social__icon {
+  fill: var(--color-accent_dark);
 }
