@@ -9,6 +9,12 @@
   padding-bottom: 87px;
 }
 
+.footer__social-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 115px;
+}
+
 .footer__info {
   display: flex;
   flex-direction: column;
@@ -29,6 +35,10 @@
   height: 96px;
   font-size: 16px;
   color: var(--color-secondary);
+}
+
+.footer__nav-link {
+  padding: 0;
 }
 
 .footer__decor {

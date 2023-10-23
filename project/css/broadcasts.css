@@ -2,11 +2,11 @@
   display: flex;
 }
 
-.broadcasts__header_out {
+.broadcasts__header_outer {
   display: none;
 }
 
-.broadcasts__header_in {
+.broadcasts__header_inner {
   margin-bottom: auto;
 }
 

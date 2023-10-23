@@ -20,13 +20,10 @@
   background-color: var(--color-secondary);
 }
 
-.podcasts__card-picture {
-  width: 112px;
-}
-
-.podcasts__card-picture img {
+.podcasts__card-picture .podcasts__card-img {
   display: block;
-  height: 100%;
+  min-width: 112px;
+  height: 140px;
 }
 
 .podcasts__card-content {

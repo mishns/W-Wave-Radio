@@ -1,4 +1,5 @@
 .search-btn {
+  flex-shrink: 0;
   width: 24px;
   height: 24px;
   font-size: 0;
@@ -8,22 +9,22 @@
   outline: none;
 }
 
-.search-btn svg {
+.search-btn .search-btn__icon {
   stroke: var(--color-accent);
   -webkit-transition: stroke .3s ease-in-out;
   -o-transition: stroke .3s ease-in-out;
   transition: stroke .3s ease-in-out;
 }
 
-.search-btn:focus svg {
+.search-btn:focus .search-btn__icon {
   stroke: var(--color-accent_light);
 }
 
-.search-btn:hover svg {
+.search-btn:hover .search-btn__icon {
   stroke: var(--color-accent_light);
 }
 
-.search-btn:active svg {
+.search-btn:active .search-btn__icon {
   stroke: var(--color-accent_dark);
   outline: none;
 }

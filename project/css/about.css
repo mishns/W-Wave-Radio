@@ -4,10 +4,10 @@
   padding-bottom: 89px;
 }
 
-.about__container {
+.about__descr-container {
+  margin-bottom: var(--gap);
   display: flex;
   flex-direction: column;
-  gap: var(--gap);
 }
 
 .about__descr {
@@ -62,8 +62,14 @@
   margin-top: 19px;
 }
 
+.about__alt-decor {
+  display: none;
+}
+
 .about__list {
+  margin-bottom: var(--gap);
   display: flex;
+  flex-wrap: wrap;
   gap: var(--gap);
   --offsets: 3;
 }

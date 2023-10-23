@@ -5,6 +5,10 @@
   padding-bottom: 31px;
 }
 
+.header__alt-header {
+  display: none;
+}
+
 .header__site-link {
   padding-top: 3px;
 }
