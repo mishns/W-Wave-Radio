@@ -82,9 +82,9 @@
 .broadcasts__card-content {
   display: flex;
   flex-direction: column;
+  height: 100%;
   padding: 18px 15px;
   border: 1px solid var(--color-grey_lighten);
-  height: 100%;
 }
 
 .broadcasts__card-img {
