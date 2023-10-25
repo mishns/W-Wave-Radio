@@ -36,12 +36,9 @@
   min-height: 272px;
 }
 
-.guests__card-picture {
-  min-width: 432px;
-}
-
-.guests__card-picture img {
+.guests__card-img {
   display: block;
+  min-width: 432px;
 }
 
 .guests__card-content {

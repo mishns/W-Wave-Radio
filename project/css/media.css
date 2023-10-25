@@ -200,3 +200,168 @@
     background-image: url('../img/footer-decor-w1024.svg');
   }
 }
+
+@media (max-width: 860px) {
+  .container {
+    max-width: 570px;
+  }
+
+  .hero__content {
+    width: 100%;
+  }
+
+  .hero__decor {
+    display: none;
+  }
+
+  .podcasts__list {
+    --offsets: 0;
+  }
+
+  .broadcasts__container {
+    flex-direction: column-reverse;
+  }
+
+  .broadcasts__header_inner {
+    display: none;
+  }
+
+  .broadcasts__header_outer {
+    display: block;
+    order: 1;
+    margin-bottom: var(--gap);
+  }
+
+  .broadcasts__archive {
+    display: none;
+  }
+
+  .broadcasts__archive_alt {
+    display: block;
+    border-top: 1px solid var(--color-grey_darken);
+  }
+
+  .broadcasts__archive-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    gap: 20px;
+  }
+
+  .broadcasts__archive-text {
+    display: flex;
+    max-width: 255px;
+  }
+
+  .broadcasts__archive-decor_alt {
+    width: 70px;
+    height: 96px;
+    background-image: url('../img/broadcasts-bg-w70.png');
+  }
+
+  .broadcasts__list {
+    margin-bottom: 60px;
+  }
+
+  .guests__card {
+    flex-direction: column;
+  }
+
+  .guests__card-img {
+    width: 100%;
+    height: 340px;
+  }
+
+  .guests__card-descr {
+    max-width: 362px;
+  }
+
+  .playlists__list {
+    --offsets: 1;
+  }
+
+  .new-product-container {
+    flex-direction: column;
+  }
+
+  .new-product__full-image {
+    padding-top: 0;
+  }
+
+  .about {
+    position: relative;
+  }
+
+  .about__descr {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0;
+  }
+
+  .about__descr-text {
+    margin-bottom: 14px;
+  }
+
+  .about__descr-decor {
+    justify-content: flex-end;
+    height: 115px;
+    padding-top: 0;
+  }
+
+  .about__decor-1 {
+    position: absolute;
+    top: 457px;
+    left: -2px;
+    display: block;
+    height: 120px;
+    width: 516px;
+    background-image: url('../img/about-decor-3.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+
+  .about__decor-2 {
+    margin-top: 0;
+    width: 112px;
+    height: 112px;
+    background-image: url('../img/about-decor-2.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+
+  .about__personal-data-inputs {
+    flex-direction: column;
+    gap: var(--gap);
+  }
+
+  .about__input_small {
+    width: 100%;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__info {
+    align-items: center;
+  }
+
+  .footer__social {
+    margin-bottom: 80px;
+  }
+
+  .footer__nav {
+    width: 100%;
+  }
+
+  .footer__nav-list {
+    align-content: space-between;
+  }
+}
+
+@media (max-width: 768px) {
+
+}

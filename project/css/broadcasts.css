@@ -2,6 +2,10 @@
   display: flex;
 }
 
+.broadcasts__archive_alt {
+  display: none;
+}
+
 .broadcasts__header_outer {
   display: none;
 }
@@ -27,7 +31,12 @@
   background-size: contain;
 }
 
+.broadcasts__archive-text {
+  flex-direction: column;
+}
+
 .broadcasts__archive-btn {
+  display: block;
   margin-bottom: 12px;
   padding: 8px 43px;
   color: var(--color-main);
