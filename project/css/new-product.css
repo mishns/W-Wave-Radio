@@ -16,14 +16,14 @@
   font-size: 0;
 }
 
-.new-product__product-picture img{
-  min-width: 640px;
-  min-height: 562px;
+.new__product-img {
+  min-width: 397px;
+  min-height: 349px;
 }
 
-.new-product__new-img {
+.new-product__new-product-icon {
   position: absolute;
-  top: 0;
+  top: 1px;
   left: 0;
   width: 160px;
   height: 160px;

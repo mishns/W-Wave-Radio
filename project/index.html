@@ -10,9 +10,36 @@
 </head>
 <body>
   <header class="header">
-    <div class="header__container container">
-      <div class="header__alt-header">
-        <a href="#" class="header__site-link" aria-label="Ссылка на сайт W-Wave Radio"><img class="header__logo logo" src="/img/w-wave-logo.svg" alt="Логотип W-Wave Radio"></a>
+    <div class="header__top_alt-container container">
+      <div class="header__top_alt">
+        <a href="#" class="header__site-link header__site-link_alt" aria-label="Ссылка на сайт W-Wave Radio"><img class="header__logo logo" src="/img/w-wave-logo.svg" alt="Логотип W-Wave Radio"></a>
+        <button href="#" class="header__search header__search_alt search-btn btn-reset" aria-label="Поиск по сайту">
+          <svg class="search-btn__icon" width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Component 11">
+            <path id="Vector" d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path id="Vector_2" d="M21 21L16.65 16.65" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="header__content-wrapper">
+      <div class="header__container container">
+        <a href="#" class="header__site-link" aria-label="Ссылка на сайт W-Wave Radio">
+          <picture>
+            <img class="header__logo logo" src="/img/w-wave-logo.svg" alt="Логотип W-Wave Radio">
+          </picture>
+        </a>
+        <nav class="header__nav nav">
+          <ul class="header__nav-list nav__list list-reset" aria-label="Список навигации по сайту">
+            <li class="header__nav-item nav__item"><a href="#podcasts" class="header__nav-link nav__link" aria-label="Подкасты">Подкасты</a></li>
+            <li class="header__nav-item nav__item"><a href="#broadcasts" class="header__nav-link nav__link" aria-label="Передачи">Передачи</a></li>
+            <li class="header__nav-item nav__item"><a href="#guests" class="header__nav-link nav__link" aria-label="Гости">Гости</a></li>
+            <li class="header__nav-item nav__item"><a href="#playlists" class="header__nav-link nav__link" aria-label="Плейлисты">Плейлисты</a></li>
+            <li class="header__nav-item nav__item"><a href="#about" class="header__nav-link nav__link" aria-label="О нас">О&nbsp;нас</a></li>
+          </ul>
+        </nav>
         <button href="#" class="header__search search-btn btn-reset" aria-label="Поиск по сайту">
           <svg class="search-btn__icon" width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="Component 11">
@@ -22,28 +49,11 @@
           </svg>
         </button>
       </div>
-      <a href="#" class="header__site-link" aria-label="Ссылка на сайт W-Wave Radio"><img class="header__logo logo" src="/img/w-wave-logo.svg" alt="Логотип W-Wave Radio"></a>
-      <nav class="header__nav nav">
-        <ul class="header__nav-list nav__list list-reset" aria-label="Список навигации по сайту">
-          <li class="header__nav-item nav__item"><a href="#podcasts" class="header__nav-link nav__link" aria-label="Подкасты">Подкасты</a></li>
-          <li class="header__nav-item nav__item"><a href="#broadcasts" class="header__nav-link nav__link" aria-label="Передачи">Передачи</a></li>
-          <li class="header__nav-item nav__item"><a href="#guests" class="header__nav-link nav__link" aria-label="Гости">Гости</a></li>
-          <li class="header__nav-item nav__item"><a href="#playlists" class="header__nav-link nav__link" aria-label="Плейлисты">Плейлисты</a></li>
-          <li class="header__nav-item nav__item"><a href="#about" class="header__nav-link nav__link" aria-label="О нас">О&nbsp;нас</a></li>
-        </ul>
-      </nav>
-      <button href="#" class="header__search search-btn btn-reset" aria-label="Поиск по сайту">
-        <svg class="search-btn__icon" width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g id="Component 11">
-          <path id="Vector" d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path id="Vector_2" d="M21 21L16.65 16.65" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </g>
-        </svg>
-      </button>
     </div>
+
   </header>
 
-  <section class="hero section">
+  <section class="hero section" id="hero">
     <div class="hero__container container">
       <div class="hero__content">
         <h1 class="hero__header">Радио <span class="hero__name">W-Wave</span></h1>
@@ -150,7 +160,7 @@
     </div>
   </section>
 
-  <section class="broadcasts section">
+  <section class="broadcasts section" id="broadcasts">
     <div class="broadcasts__container container">
       <h2 class="broadcasts__header broadcasts__header_outer section__header">Передачи</h2>
       <div class="broadcasts__archive">
@@ -163,7 +173,7 @@
       <ul class="broadcasts__list list-reset">
         <li class="broadcasts__card card">
           <picture class="broadcasts__card-picture">
-            <img src="img/broadcasts-1-w255.jpg" alt="О людях и книгах">
+            <img class="broadcasts__card-img" src="img/broadcasts-1-w255.jpg" alt="О людях и книгах">
           </picture>
           <div class="broadcasts__card-content">
             <h3 class="broadcasts__card-header">О&nbsp;людях и&nbsp;книгах</h3>
@@ -180,7 +190,7 @@
         </li>
         <li class="broadcasts__card card">
           <picture class="broadcasts__card-picture">
-            <img src="img/broadcasts-2-w255.jpg" alt="Графомания td">
+            <img class="broadcasts__card-img" src="img/broadcasts-2-w255.jpg" alt="Графомания td">
           </picture>
           <div class="broadcasts__card-content">
             <h3 class="broadcasts__card-header">Графомания&nbsp;td</h3>
@@ -197,7 +207,7 @@
         </li>
         <li class="broadcasts__card card">
           <picture class="broadcasts__card-picture">
-            <img src="img/broadcasts-3-w255.jpg" alt="Не Рим, не Троя">
+            <img class="broadcasts__card-img" src="img/broadcasts-3-w255.jpg" alt="Не Рим, не Троя">
           </picture>
           <div class="broadcasts__card-content">
             <h3 class="broadcasts__card-header">Не&nbsp;Рим, не&nbsp;Троя</h3>
@@ -214,7 +224,7 @@
         </li>
         <li class="broadcasts__card card">
           <picture class="broadcasts__card-picture">
-            <img src="img/broadcasts-4-w255.jpg" alt="Эрудит">
+            <img class="broadcasts__card-img" src="img/broadcasts-4-w255.jpg" alt="Эрудит">
           </picture>
           <div class="broadcasts__card-content">
             <h3 class="broadcasts__card-header">Эрудит</h3>
@@ -231,7 +241,7 @@
         </li>
         <li class="broadcasts__card card">
           <picture class="broadcasts__card-picture">
-            <img src="img/broadcasts-5-w255.jpg" alt="Тонкости эпох">
+            <img class="broadcasts__card-img" src="img/broadcasts-5-w255.jpg" alt="Тонкости эпох">
           </picture>
           <div class="broadcasts__card-content">
             <h3 class="broadcasts__card-header">Тонкости эпох</h3>
@@ -248,7 +258,7 @@
         </li>
         <li class="broadcasts__card card">
           <picture class="broadcasts__card-picture">
-            <img src="img/broadcasts-6-w255.jpg" alt="Живые мысли">
+            <img class="broadcasts__card-img" src="img/broadcasts-6-w255.jpg" alt="Живые мысли">
           </picture>
           <div class="broadcasts__card-content">
             <h3 class="broadcasts__card-header">Живые мысли</h3>
@@ -267,7 +277,7 @@
     </div>
   </section>
 
-  <section class="guests section">
+  <section class="guests section" id="guests">
     <div class="guests__container container">
       <h2 class="guests__header section__header">Гости</h2>
       <span class="guests__pre-text">У&nbsp;нас бывают:</span>
@@ -308,7 +318,7 @@
     </div>
   </section>
 
-  <section class="playlists section">
+  <section class="playlists section" id="playlists">
     <div class="playlists__container container">
       <div class="playlists__descr">
         <h2 class="playlists__header section__header">Плейлисты</h2>
@@ -320,7 +330,8 @@
       <ul class="playlists__list list-reset">
         <li class="playlists__card card">
           <picture class="plalylists__card-picture">
-            <img src="img/playlists-1-w160.jpg" alt="Ploho">
+            <source media="(max-width: 1200px)" srcset="img/playlists-1-w112.jpg">
+            <img class="playlists__card-img" src="img/playlists-1-w160.jpg" alt="Ploho">
           </picture>
           <div class="playlists__card-content">
             <h3 class="playlists__card-name">Ploho</h3>
@@ -332,7 +343,8 @@
         </li>
         <li class="playlists__card card">
           <picture class="plalylists__card-picture">
-            <img src="img/playlists-2-w160.jpg" alt="Molchat Doma">
+            <source media="(max-width: 1200px)" srcset="img/playlists-2-w112.jpg">
+            <img class="playlists__card-img" src="img/playlists-2-w160.jpg" alt="Molchat Doma">
           </picture>
           <div class="playlists__card-content">
             <h3 class="playlists__card-name">Molchat Doma</h3>
@@ -344,7 +356,8 @@
         </li>
         <li class="playlists__card card">
           <picture class="plalylists__card-picture">
-            <img src="img/playlists-3-w160.jpg" alt="Motorama">
+            <source media="(max-width: 1200px)" srcset="img/playlists-3-w112.jpg">
+            <img class="playlists__card-img" src="img/playlists-3-w160.jpg" alt="Motorama">
           </picture>
           <div class="playlists__card-content">
             <h3 class="playlists__card-name">Motorama</h3>
@@ -356,7 +369,8 @@
         </li>
         <li class="playlists__card card">
           <picture class="plalylists__card-picture">
-            <img src="img/playlists-4-w160.jpg" alt="Human Tetris">
+            <source media="(max-width: 1200px)" srcset="img/playlists-4-w112.jpg">
+            <img class="playlists__card-img" src="img/playlists-4-w160.jpg" alt="Human Tetris">
           </picture>
           <div class="playlists__card-content">
             <h3 class="playlists__card-name">Human Tetris</h3>
@@ -368,7 +382,8 @@
         </li>
         <li class="playlists__card card">
           <picture class="plalylists__card-picture">
-            <img src="img/playlists-5-w160.jpg" alt="Буерак">
+            <source media="(max-width: 1200px)" srcset="img/playlists-5-w112.jpg">
+            <img class="playlists__card-img" src="img/playlists-5-w160.jpg" alt="Буерак">
           </picture>
           <div class="playlists__card-content">
             <h3 class="playlists__card-name">Буерак</h3>
@@ -380,7 +395,8 @@
         </li>
         <li class="playlists__card card">
           <picture class="plalylists__card-picture">
-            <img src="img/playlists-6-w160.jpg" alt="Июльские Дни">
+            <source media="(max-width: 1200px)" srcset="img/playlists-6-w112.jpg">
+            <img class="playlists__card-img" src="img/playlists-6-w160.jpg" alt="Июльские Дни">
           </picture>
           <div class="playlists__card-content">
             <h3 class="playlists__card-name">Июльские Дни</h3>
@@ -392,7 +408,8 @@
         </li>
         <li class="playlists__card card">
           <picture class="plalylists__card-picture">
-            <img src="img/playlists-7-w160.jpg" alt="Joy Division">
+            <source media="(max-width: 1200px)" srcset="img/playlists-7-w112.jpg">
+            <img class="playlists__card-img" src="img/playlists-7-w160.jpg" alt="Joy Division">
           </picture>
           <div class="playlists__card-content">
             <h3 class="playlists__card-name">Joy Division</h3>
@@ -404,7 +421,8 @@
         </li>
         <li class="playlists__card card">
           <picture class="plalylists__card-picture">
-            <img src="img/playlists-8-w160.jpg" alt="The Cure">
+            <source media="(max-width: 1200px)" srcset="img/playlists-8-w112.jpg">
+            <img class="playlists__card-img" src="img/playlists-8-w160.jpg" alt="The Cure">
           </picture>
           <div class="playlists__card-content">
             <h3 class="playlists__card-name">The Cure</h3>
@@ -416,7 +434,8 @@
         </li>
         <li class="playlists__card card">
           <picture class="plalylists__card-picture">
-            <img src="img/playlists-9-w160.jpg" alt="The Smiths">
+            <source media="(max-width: 1200px)" srcset="img/playlists-9-w112.jpg">
+            <img class="playlists__card-img" src="img/playlists-9-w160.jpg" alt="The Smiths">
           </picture>
           <div class="playlists__card-content">
             <h3 class="playlists__card-name">The Smiths</h3>
@@ -428,7 +447,8 @@
         </li>
         <li class="playlists__card card">
           <picture class="plalylists__card-picture">
-            <img src="img/playlists-10-w160.jpg" alt="New Order">
+            <source media="(max-width: 1200px)" srcset="img/playlists-10-w112.jpg">
+            <img class="playlists__card-img" src="img/playlists-10-w160.jpg" alt="New Order">
           </picture>
           <div class="playlists__card-content">
             <h3 class="playlists__card-name">New Order</h3>
@@ -440,7 +460,8 @@
         </li>
         <li class="playlists__card card">
           <picture class="plalylists__card-picture">
-            <img src="img/playlists-11-w160.jpg" alt="Bauhaus">
+            <source media="(max-width: 1200px)" srcset="img/playlists-11-w112.jpg">
+            <img class="playlists__card-img" src="img/playlists-11-w160.jpg" alt="Bauhaus">
           </picture>
           <div class="playlists__card-content">
             <h3 class="playlists__card-name">Bauhaus</h3>
@@ -452,7 +473,8 @@
         </li>
         <li class="playlists__card card">
           <picture class="plalylists__card-picture">
-            <img src="img/playlists-12-w160.jpg" alt="Gang Of Four">
+            <source media="(max-width: 1200px)" srcset="img/playlists-12-w112.jpg">
+            <img class="playlists__card-img" src="img/playlists-12-w160.jpg" alt="Gang Of Four">
           </picture>
           <div class="playlists__card-content">
             <h3 class="playlists__card-name">Gang Of Four</h3>
@@ -466,13 +488,14 @@
     </div>
   </section>
 
-  <section class="new-product section">
+  <section class="new-product section" id="new-product">
     <div class="new-product-container container">
       <div class="new-product__full-image">
         <picture class="new-product__product-picture">
-          <img src="img/new-product-w640.png" alt="Радиоприёмник W-Wave">
+          <source media="(max-width: 1200)" srcset="img/new-product-w397.png">
+          <img class="new__product-img" src="img/new-product-w640.png" alt="Радиоприёмник W-Wave">
         </picture>
-        <img src="img/new-product-new.svg" class="new-product__new-img" alt="Новый продукт">
+        <div class="new-product__new-product-icon new-product-icon"></div>
       </div>
       <div class="new-product__content">
         <h2 class="new-product__header section__header">Будь с&nbsp;нами на&nbsp;одной волне!</h2>
@@ -500,7 +523,7 @@
     </div>
   </section>
 
-  <section class="about section">
+  <section class="about section" id="about">
     <div class="about__descr-container container">
       <div class="about__descr">
         <div class="about__descr-text">
@@ -524,6 +547,7 @@
       <ul class="about__list list-reset">
         <li class="about__card">
           <picture class="about__card-picture">
+            <source media="(max-width: 1024px) and (min-width: 768px)" srcset="img/about-guest-1-w397.jpg">
             <img class="about__card-img" src="img/about-guest-1-w255.jpg" alt="Дмитрий Гутенберг">
           </picture>
           <div class="about__card-content">
@@ -533,6 +557,7 @@
         </li>
         <li class="about__card">
           <picture class="about__card-picture">
+            <source media="(max-width: 1024px) and (min-width: 768px)" srcset="img/about-guest-2-w397.jpg">
             <img class="about__card-img" src="img/about-guest-2-w255.jpg" alt="Анна Васильева">
           </picture>
           <div class="about__card-content">
@@ -542,6 +567,7 @@
         </li>
         <li class="about__card">
           <picture class="about__card-picture">
+            <source media="(max-width: 1024px) and (min-width: 768px)" srcset="img/about-guest-3-w397.jpg">
             <img class="about__card-img" src="img/about-guest-3-w255.jpg" alt="Пётр Дмитриевский">
           </picture>
           <div class="about__card-content">
@@ -551,6 +577,7 @@
         </li>
         <li class="about__card">
           <picture class="about__card-picture">
+            <source media="(max-width: 1024px) and (min-width: 768px)" srcset="img/about-guest-4-w397.jpg">
             <img class="about__card-img" src="img/about-guest-4-w255.jpg" alt="Татьяна Флеганова">
           </picture>
           <div class="about__card-content">

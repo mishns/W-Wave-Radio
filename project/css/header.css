@@ -5,7 +5,7 @@
   padding-bottom: 31px;
 }
 
-.header__alt-header {
+.header__top_alt {
   display: none;
 }
 
@@ -22,5 +22,8 @@
 }
 
 .header__nav-list {
-  gap: 39px;
+  display: flex;
+  width: 100%;
+  column-gap: 39px;
+  row-gap: 39px;
 }
