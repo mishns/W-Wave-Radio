@@ -5,8 +5,15 @@
   padding-bottom: 31px;
 }
 
-.header__top_alt {
+.header__alt-top {
   display: none;
+}
+
+.header__alt-top-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 28px;
+  padding-bottom: 25px;
 }
 
 .header__site-link {

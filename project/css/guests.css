@@ -3,6 +3,10 @@
   color: var(--color-grey_darken);
 }
 
+.guests__text {
+  margin-bottom: 49px;
+}
+
 .guests__header {
   margin-bottom: 12px;
   color: var(--color-secondary);
@@ -17,7 +21,6 @@
 }
 
 .guests__descr {
-  margin-bottom: 49px;
   max-width: 825px;
   font-size: 20px;
   font-weight: 400;

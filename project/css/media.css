@@ -59,17 +59,10 @@
     display: none;
   }
 
-
   .header__alt-top {
     display: block;
   }
 
-  .header__alt-top-container {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 28px;
-    padding-bottom: 25px;
-  }
 
   .header__site-link_alt {
     display: block;
@@ -266,7 +259,7 @@
   }
 
   .broadcasts__list {
-    margin-bottom: 60px;
+    padding-bottom: 60px;
   }
 
   .guests__card {
@@ -317,7 +310,7 @@
   .about__decor-1 {
     position: absolute;
     top: 457px;
-    left: -2px;
+    right: 344px;
     display: block;
     height: 120px;
     width: 516px;
@@ -483,6 +476,7 @@
 
   .about__decor-1 {
     top: 473px;
+    right: 254px;
   }
 
   .about__list {
@@ -528,5 +522,486 @@
 
   .footer__decor {
     background-image: url('../img/footer-decor-w768.svg');
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    max-width: 286px;
+  }
+
+  .section__header {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .header__alt-top-container {
+    padding-top: 15px;
+    padding-bottom: 12px;
+  }
+
+  .header__site-link_alt {
+    padding-top: 3px;
+  }
+
+  .header__logo {
+    max-width: 87px;
+    min-width: 87px;
+  }
+
+  .header__container {
+    padding-top: 15px;
+    padding-bottom: 14px;
+  }
+
+  .header__nav {
+    width: 100%;
+  }
+
+  .header__nav-list {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    gap: 32px;
+  }
+
+  .header__nav-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hero__header {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 7px;
+  }
+
+  .hero__content {
+    padding: 41px 0;
+  }
+
+  .hero__descr {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .hero__btn {
+    min-width: 200px;
+    height: 50px;
+    padding: 15px 30px;
+    font-size: 16px;
+  }
+
+  .podcasts {
+    padding-top: 53px;
+    padding-bottom: 55px;
+  }
+
+  .podcasts__header {
+    margin-bottom: 19px;
+  }
+
+  .podcasts__card {
+    flex-direction: column;
+  }
+
+  .podcasts__card-img {
+    width: 100%;
+    max-height: 72px;
+  }
+
+  .podcasts__card-content {
+    padding: 30px 16px;
+  }
+
+  .podcasts__time {
+    margin-bottom: 5px;
+  }
+
+  .podcasts__card-header {
+    font-size: 16px;
+    margin-bottom: 2px;
+  }
+
+  .podcasts__author {
+    font-size: 12px;
+  }
+
+  .podcasts__day {
+    top: 0;
+  }
+
+  .broadcasts {
+    padding-top: 55px;
+    padding-bottom: 54px;
+  }
+
+  .broadcasts__card {
+    min-height: 149px;
+  }
+
+  .broadcasts__card-content {
+    padding-top: 8px;
+    padding-left: 9px;
+    padding-bottom: 11px;
+    padding: 8px 9px 11px 9px;
+    line-height: 1.03;
+  }
+
+  .broadcasts__header {
+    margin-bottom: 15px;
+  }
+
+
+  .broadcasts__card-img {
+    width: 113px;
+    height: 50px;
+  }
+
+  .broadcasts__card-header {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+
+  .broadcasts__card-time {
+    font-size: 9px;
+  }
+
+  .broadcasts__card-more-link {
+    font-size: 12px;
+  }
+
+  .broadcasts__list {
+    padding-bottom: 30px;
+  }
+
+  .broadcasts__archive-container {
+    padding-left: 10px;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 13px;
+  }
+
+  .broadcasts__archive-decor_alt {
+    margin: 0;
+    min-width: 77px;
+    height: 105px;
+    background-image: url('../img/broadcasts-bg-w77.png');
+  }
+
+  .broadcasts__archive-text_alt {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    max-width: 166px;
+    font-size: 14px;
+  }
+
+  .broadcasts__archive-descr {
+    line-height: 21px;
+  }
+
+  .broadcasts__archive-btn {
+    margin: 0;
+    max-width: 110px;
+    min-height: 35px;
+    padding: 0 8px;
+  }
+
+  .guests {
+    padding-top: 55px;
+    padding-bottom: 56px;
+    margin-left: -1px;
+  }
+
+  .guests__text {
+    margin-bottom: 30px;
+  }
+
+  .guests__header {
+    margin-bottom: 10px;
+  }
+
+  .guests__pre-text {
+    margin-bottom: 1px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .guests__descr {
+    font-size: 14px;
+    line-height: 22.1px;
+  }
+
+  .guests__list {
+    gap: 29px;
+  }
+
+  .guests__card-picture {
+    min-width: 256px;
+  }
+
+  .guests__card-img {
+    min-width: 256px;
+    width: 256px;
+    height: 159px;
+  }
+
+  .guests__card {
+    gap: 11px;
+    min-height: 525px;
+  }
+
+  .guests__card-descr {
+    line-height: 29.1px;
+  }
+
+  .guests__card-btn {
+    max-width: 150px;
+    min-height: 35px;
+    padding: 0 7px;
+  }
+
+  .playlists {
+    padding: 54px 0;
+  }
+
+  .playlists__descr {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .playlists__header {
+    margin-bottom: 11px;
+  }
+
+  .playlists__caution {
+    margin-bottom: 3px;
+  }
+
+  .playlists__trademark {
+    margin-bottom: 10px;
+  }
+
+  .playlists__card {
+    flex-direction: column;
+    min-height: 159px;
+  }
+
+  .playlists__card-img {
+    width: 113px;
+    height: 113px;
+  }
+
+  .playlists__card-name {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+
+  .playlists__card-descr {
+    font-size: 9px;
+  }
+
+  .playlists__card-content {
+    padding-top: 8px;
+  }
+
+  .playlists__country {
+    left: initial;
+    right: 0;
+  }
+
+  .new-product {
+    padding: 54px 0;
+  }
+
+  .new-product-container {
+    gap: 37px;
+  }
+
+  .new__product-img {
+    min-width: 256px;
+    min-height: 225px;
+  }
+
+  .new-product__new-product-icon {
+    width: 62px;
+    height: 62px;
+    left: 6px;
+    background-image: url('../img/new-product-new-w62.svg');
+  }
+
+  .new-product__content {
+    padding-top: 0;
+  }
+
+  .new-product__header {
+    margin-bottom: 11px;
+  }
+
+  .new-product__decor {
+    background-image: url('../img/new-product-decor-w254.svg');
+  }
+
+  .new-product__descr_1 {
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .new-product__descr_2 {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .new-product__cost {
+    margin-bottom: 16px;
+    font-size: 24px;
+  }
+
+  .new-product__buy-btn {
+    max-width: 100%;
+    min-height: 50px;
+    padding: 10px 10px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .about {
+    padding-top: 55px;
+    padding-bottom: 48px;
+  }
+
+  .about__descr-text {
+    margin-bottom: 0;
+  }
+
+  .about__header {
+    margin-bottom: 11px;
+  }
+
+  .about__par-1 {
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .about__par-2 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .about__descr-decor {
+    display: none;
+  }
+
+  .about__card {
+    min-height: 214px;
+  }
+
+  .about__card-img {
+    margin-bottom: 12px;
+    width: 113px;
+    height: 113px;
+  }
+
+  .about__card-name {
+    margin-bottom: 4px;
+    padding-right: 5px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .about__card-descr {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .about__input {
+    font-size: 16px;
+  }
+
+  .about__input_big {
+    padding: 14px 23px;
+    border-radius: 20px;
+  }
+
+  .about__input_small {
+    min-height: 49px;
+    padding: 10px 23px;
+  }
+
+  .about__personal-data-inputs {
+    margin-bottom: 31px;
+  }
+
+  .about__submit-btn {
+    margin-bottom: 16px;
+    max-width: 172px;
+    min-height: 50px;
+    padding: 16px 40px;
+    font-size: 16px;
+  }
+
+  .about__agree-checkbox {
+    width: 13px;
+    height: 13px;
+    margin-right: 3px;
+  }
+
+  .about__agree-label {
+    font-size: 9px;
+  }
+
+  .footer__container {
+    padding-top: 51px;
+    padding-bottom: 8px;
+  }
+
+  .footer__info {
+    margin-bottom: 0;
+    padding-bottom: 54px;
+  }
+
+  .footer__nav {
+    position: relative;
+    z-index: 1;
+    padding: 30px 0;
+    padding-right: 64px;
+  }
+
+  .footer__nav::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 4000px;
+    left: -2000px;
+    background-color: var(--color-main);
+    z-index: -1;
+  }
+
+  .footer__nav-list {
+    display: flex;
+    min-height: 157px;
+    align-content: space-between;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: 22px;
+    column-gap: 0;
+    font-size: 12px;
+  }
+
+  .footer__bottom {
+    padding: 8px 0;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .broadcasts__archive-container {
+    margin-left: 0;
+  }
+
+  .footer__decor {
+    background-image: url('../img/footer-decor-w320.svg');
   }
 }
