@@ -24,14 +24,15 @@
 
 .footer__nav-list {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   flex-shrink: 0;
   flex-grow: 1;
+  flex-wrap: wrap;
+  flex-direction: column;
   align-content: flex-end;
   align-items: flex-start;
   row-gap: 18px;
-  column-gap: 109px;
+  -moz-column-gap: 109px;
+       column-gap: 109px;
   height: 96px;
   font-size: 16px;
   color: var(--color-secondary);

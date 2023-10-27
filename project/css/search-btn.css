@@ -11,8 +11,6 @@
 
 .search-btn .search-btn__icon {
   stroke: var(--color-accent);
-  -webkit-transition: stroke .3s ease-in-out;
-  -o-transition: stroke .3s ease-in-out;
   transition: stroke .3s ease-in-out;
 }
 

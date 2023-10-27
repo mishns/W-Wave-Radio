@@ -191,7 +191,9 @@
 
 .about__agree-checkbox {
   position: relative;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   margin-right: 3px;
   width: 14px;
   height: 14px;
@@ -221,6 +223,9 @@
   font-size: 12px;
   font-weight: 500;
   vertical-align: middle;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   cursor: pointer;
 }
