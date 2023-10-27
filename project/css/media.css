@@ -217,6 +217,10 @@
     --offsets: 0;
   }
 
+  .broadcasts {
+    padding-bottom: 5px;
+  }
+
   .broadcasts__container {
     flex-direction: column-reverse;
   }
@@ -231,35 +235,40 @@
     margin-bottom: var(--gap);
   }
 
+  .broadcasts__list {
+    padding-bottom: 60px;
+  }
+
   .broadcasts__archive {
-    display: none;
-  }
-
-  .broadcasts__archive_alt {
-    display: block;
-    border-top: 1px solid var(--color-grey_darken);
-  }
-
-  .broadcasts__archive-container {
-    display: flex;
+    position: relative;
+    flex-direction: row;
     justify-content: center;
-    padding-top: 30px;
+    padding-top: 31px;
+    padding-bottom: 24px;
+    padding-left: 30px;
     gap: 20px;
   }
 
-  .broadcasts__archive-text {
-    display: flex;
-    max-width: 255px;
+  .broadcasts__archive::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: -1000px;
+    width: 4000px;
+    height: 100%;
+    border-top: 1px solid var(--color-grey_lighten);
   }
 
-  .broadcasts__archive-decor_alt {
+  .broadcasts__archive-decor {
+    margin: 0;
     width: 70px;
     height: 96px;
     background-image: url('../img/broadcasts-bg-w70.png');
   }
 
-  .broadcasts__list {
-    padding-bottom: 60px;
+  .broadcasts__archive-text {
+    display: flex;
+    max-width: 255px;
   }
 
   .guests__card {
@@ -275,8 +284,16 @@
     max-width: 362px;
   }
 
+  .playlists {
+    padding-bottom: 112px;
+  }
+
   .playlists__list {
     --offsets: 1;
+  }
+
+  .new-product {
+    padding-top: 54px;
   }
 
   .new-product-container {
@@ -307,13 +324,12 @@
     padding-top: 0;
   }
 
-  .about__decor-1 {
+  .about__descr-decor::before {
     position: absolute;
-    top: 457px;
-    right: 344px;
-    display: block;
-    height: 120px;
-    width: 516px;
+    content: '';
+    left: 0;
+    height: 117px;
+    width: 513px;
     background-image: url('../img/about-decor-3.svg');
     background-repeat: no-repeat;
     background-position: center center;
@@ -395,7 +411,6 @@
 
   .broadcasts {
     padding-top: 93px;
-    padding-bottom: 5px;
   }
 
   .broadcasts__header {
@@ -437,10 +452,6 @@
     gap: 29px;
   }
 
-  .new-product {
-    padding-top: 72px;
-  }
-
   .new-product-container {
     gap: 50px;
   }
@@ -468,6 +479,11 @@
 
   .about__descr-text {
     margin-bottom: 27px;
+  }
+
+  .about__descr-decor::before {
+    left: initial;
+    right: 255px;
   }
 
   .about__decor-2 {
@@ -632,7 +648,7 @@
 
   .broadcasts {
     padding-top: 55px;
-    padding-bottom: 54px;
+    padding-bottom: 30px;
   }
 
   .broadcasts__card {
@@ -650,7 +666,6 @@
   .broadcasts__header {
     margin-bottom: 15px;
   }
-
 
   .broadcasts__card-img {
     width: 113px;
@@ -674,21 +689,22 @@
     padding-bottom: 30px;
   }
 
-  .broadcasts__archive-container {
-    padding-left: 10px;
-    justify-content: flex-start;
+  .broadcasts__archive {
+    margin-left: -22px;
     width: 100%;
+    padding-left: 0;
+    justify-content: center;
     gap: 13px;
   }
 
-  .broadcasts__archive-decor_alt {
+  .broadcasts__archive-decor {
     margin: 0;
     min-width: 77px;
     height: 105px;
     background-image: url('../img/broadcasts-bg-w77.png');
   }
 
-  .broadcasts__archive-text_alt {
+  .broadcasts__archive-text {
     flex-direction: column-reverse;
     justify-content: space-between;
     max-width: 166px;
