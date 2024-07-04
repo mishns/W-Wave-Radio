@@ -1,0 +1,17 @@
+.country-flag {
+  flex-shrink: 0;
+  width: 16px;
+  height: 12px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('../img/playlists-country-russia.svg');
+}
+
+.country-flag_russia {
+  background-image: url('../img/playlists-country-russia.svg');
+}
+
+.country-flag_uk {
+  background-image: url('../img/playlists-country-uk.svg');
+}

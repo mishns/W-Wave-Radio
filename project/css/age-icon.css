@@ -1,0 +1,13 @@
+.age-icon {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url('../img/age-18.svg');
+}
+
+.age-icon_18 {
+  background-image: url('../img/age-18.svg');
+}
