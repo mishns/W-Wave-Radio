@@ -1,0 +1,31 @@
+.social__list {
+  display: flex;
+  gap: 21px;
+  font-size: 0;
+}
+
+.social__item {
+  width: 24px;
+  height: 24px;
+}
+
+.social__icon {
+  fill: var(--color-grey);
+}
+
+.social__link .social__icon {
+  transition: fill .3s ease-in-out;
+}
+
+.social__link:focus .social__icon {
+  fill: var(--color-accent_light);
+  outline: none;
+}
+
+.social__link:hover .social__icon {
+  fill: var(--color-accent);
+}
+
+.social__link:active .social__icon {
+  fill: var(--color-accent_dark);
+}

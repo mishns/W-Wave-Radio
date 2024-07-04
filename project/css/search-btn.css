@@ -1,0 +1,28 @@
+.search-btn {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  font-size: 0;
+}
+
+.search-btn:focus {
+  outline: none;
+}
+
+.search-btn .search-btn__icon {
+  stroke: var(--color-accent);
+  transition: stroke .3s ease-in-out;
+}
+
+.search-btn:focus .search-btn__icon {
+  stroke: var(--color-accent_light);
+}
+
+.search-btn:hover .search-btn__icon {
+  stroke: var(--color-accent_light);
+}
+
+.search-btn:active .search-btn__icon {
+  stroke: var(--color-accent_dark);
+  outline: none;
+}

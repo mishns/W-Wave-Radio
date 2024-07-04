@@ -1,0 +1,33 @@
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.nav__link {
+  padding: 6px 10px;
+  transition: color .3s ease-in-out, background-color .3s ease-in-out;
+}
+
+.nav__link:focus {
+  color: var(--color-secondary);
+  background-color: var(--color-accent_light);
+  outline: none;
+}
+
+.nav__link:hover {
+  color: var(--color-accent);
+  background-color: transparent;
+}
+
+.nav__link:active {
+  color: var(--color-accent_dark);
+  background-color: transparent;
+}
